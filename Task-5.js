@@ -73,7 +73,10 @@ let formValidation = () => {
       var regx2 = /^[7-9][0-9]{9}$/;
       if (!regx2.test(mobile.value)) {
         document.getElementById("labelText2").innerHTML =
-          "Mobile Number is Invalid";
+          "Mobile is required and should be 10 digits";
+              const labelText2Styling = document.querySelector("#labelText2");
+      labelText2Styling.style.cssText =
+        "visibility:visible; color:red; font-size:8px";
         document.getElementById("labelText2").style.visibility = "visible";
         document.getElementById("labelText2").style.color = "red";
       } else {
@@ -88,7 +91,7 @@ let formValidation = () => {
         "LandLine is required and should be 12 digits and should start with 0";
       const labelText3Styling = document.querySelector("#labelText3");
       labelText3Styling.style.cssText =
-        "visibility:visible; color:red; font-size:8px;";
+        "visibility:visible; color:red; font-size:8px";
       /*document.getElementById("labelText3").style.visibility = "visible";
       document.getElementById("labelText3").style.color = "red";
       document.getElementById("labelText3").style.fontSize = "11px";
@@ -96,7 +99,10 @@ let formValidation = () => {
     } else {
       var regx3 = /^[0][0-9]{11}$/;
       if (!regx3.test(landLine.value)) {
-        document.getElementById("labelText3").innerHTML = "LandLine is Invalid";
+        document.getElementById("labelText3").innerHTML = "LandLine is required and should be 12 digits and should start with 0";
+         const labelText3Styling = document.querySelector("#labelText3");
+      labelText3Styling.style.cssText =
+        "visibility:visible; color:red; font-size:8px";
         document.getElementById("labelText3").style.visibility = "visible";
         document.getElementById("labelText3").style.color = "red";
       } else {
