@@ -51,6 +51,7 @@ body {
   background-color: orange;
   color: black;
   border-left: 5px solid whitesmoke;
+  cursor:pointer;
 }
 .buttonStyling1 {
   background-color: black;
@@ -188,4 +189,10 @@ body {
 .homeButtonStyling {
   background-color: orange;
   border-left: 5px solid white;
+}
+#editDetails {
+  cursor: pointer;
+}
+#deleteDetails {
+  cursor: pointer;
 }
