@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="Task-5.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container1">
+      <div id="header">Address Book</div>
+    </div>
+    <div class="container2">
+      <div class="item2-1">
+        <button class=" homeButtonStyling hoverOnDivision2 hoverOnDivision1 buttonStyling1 " id="homeButton">Home</button>
+      </div>
+      <div class="item2-1">
+        <button class=" hoverOnDivision2 hoverOnDivision1 buttonStyling1 " id="addNewMember">
+          +Add
+        </button>
+      </div>
+      <div id="item2-2">
+        <img
+          align="right"
+          src="MicrosoftTeams-image.png"
+          width="20px"
+          height="20px"
+          style="padding-top: 3px"
+        />
+      </div>
+    </div>
+    <div class="container3">
+      <span id="titleStyling">Contacts</span>
+    </div>
+    <div class="container4">
+      <div class="flexItem4-1">
+      </div>
+      <div class="flexItem4-2">
+        <form>
+          <table class="mainTableStyling">
+            <tr><td colspan="2" style="align-items: center;"><b id="validationMessage" class="validationStyling"></b></td></tr>
+            <tr>
+              <td>Name</td>
+            </tr>
+            <tr>
+              <td colspan="2"><input id="name" class="tableStyling1" /></td>
+            </tr>
+            <tr>
+              <td colspan="2">Email <label id="labelText1" style="color: red; visibility: hidden"
+                >Enter valid Email</label></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input id="email" class="tableStyling1" /></td>
+            </tr>
+            <tr>
+              <td>Mobile <label id="labelText2" style="color: red; visibility: hidden"
+                >Enter valid Mobile Number</label></td>
+              <td>Landline <label id="labelText3" style="color: red; visibility: hidden"
+                >Enter valid LandLine Number</label></td>
+            </tr>
+            <tr>
+              <td><input id="mobile" class="tableStyling2" /></td>
+              <td><input id="landLine" class="tableStyling2" /></td>
+            </tr>
+            <tr>
+              <td>Website</td>
+            </tr>
+            <tr>
+              <td colspan="2"><input id="webSite" class="tableStyling1" /></td>
+            </tr>
+            <tr>
+              <td>Address</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <textarea
+                  rows="6px"
+                  columns="30px"
+                  class="tableStyling1" id="address"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+  
+              <td colspan="3">
+                <button type="submit" id="button1">Add</button><button id="button2">Close</button>
+              </td>
+              
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div class="flexItem4-3">
+        
+      </div>
+      <div class="flexItem4-4"><table><tr>
+     <td><img src="edit1.jpg" width="15px" height="15px" id="editDetails" onclick="editData()"></td>
+      <td><span class="editDeleteStyling">EDIT</span></td>
+      <td></td><td></td><td></td>
+      <td><img src="delete2.png" width="15px" height="25px" id="deleteDetails" onclick="deleteData()"></td>
+      <td><span class="editDeleteStyling">DELETE</span></td>
+      </tr>
+      </table>
+      </div>
+    </div>
+    <script type=text/javascript src="Task-5_TypeScript.js" width="20px" height="30px"></script>
+  </body>
+</html>
